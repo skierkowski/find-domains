@@ -1,6 +1,6 @@
 {
   "name": "find-domains",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Find available domain names from word combinations using WHOIS lookup",
   "type": "module",
   "main": "lib/finder.js",
