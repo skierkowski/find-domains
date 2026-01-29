@@ -15,11 +15,11 @@
     "domain-search",
     "cli"
   ],
-  "author": "",
+  "author": "@skierkowski",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/skierkowski/find-domains"
   },
   "scripts": {
     "start": "node bin/find-domains.js"
