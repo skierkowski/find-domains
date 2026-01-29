@@ -38,13 +38,13 @@ For example: `--words quick fast --words site app` will check quicksite, quickap
 ```bash
 npx find-domains --words agent ai --words mesh hub
 ```
-Searches: agentmesh, agenthub, aimesh, aihub
+Searches: agentmesh.com, agenthub.com, aimesh.com, aihub.com
 
 **With hyphens:**
 ```bash
 npx find-domains --words agent --words mesh --hyphen
 ```
-Searches: agentmesh, agent-mesh
+Searches: agentmesh.com, agent-mesh.com
 
 **Multiple TLDs:**
 ```bash
@@ -56,16 +56,16 @@ Searches: agentmesh.com, agentmesh.ai, agentmesh.io, agentmesh.dev
 ```bash
 npx find-domains --words my --words agent --words hub mesh
 ```
-Searches: myagenthub, myagentmesh
+Searches: myagenthub.com, myagentmesh.com
 
 **Prefix + noun:**
 ```bash
 npx find-domains --words my get --words agent tool
 ```
-Searches: myagent, mytool, getagent, gettool
+Searches: myagent.com, mytool.com, getagent.com, gettool.com
 
 **Adjective + noun:**
 ```bash
 npx find-domains --words quick easy --words docs notes
 ```
-Searches: quickdocs, quicknotes, easydocs, easynotes
+Searches: quickdocs.com, quicknotes.com, easydocs.com, easynotes.com
