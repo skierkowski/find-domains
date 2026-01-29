@@ -12,6 +12,36 @@ npx find-domains --words agent --words mesh fabric --tlds com ai io
 npm install -g find-domains
 ```
 
+## MCP Server Mode
+
+Run as an MCP server to integrate with Claude Desktop or other MCP clients:
+
+### Usage with Claude Desktop
+
+Add to your `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "find-domains": {
+      "command": "npx",
+      "args": ["find-domains", "--mcp"]
+    }
+  }
+}
+```
+
+### Available Tools
+
+**check_domain** - Check if a specific domain is available
+- Input: `domain` (string) - Full domain name like "example.com"
+
+**find_domains** - Generate and check domain combinations
+- Input: `permutations` (array of arrays) - Word groups
+- Input: `tlds` (array, optional) - Domain extensions (default: ["com"])
+- Input: `includeHyphen` (boolean, optional) - Include hyphenated versions
+- Input: `concurrency` (number, optional) - Parallel checks (default: 10)
+
 ## Usage
 
 ```bash

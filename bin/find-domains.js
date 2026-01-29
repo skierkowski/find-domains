@@ -2,6 +2,7 @@
 
 import { Command } from "commander";
 import { findAvailableDomains, displayResults } from "../lib/finder.js";
+import { startMcpServer } from "../lib/mcp-server.js";
 import chalk from "chalk";
 
 const program = new Command();
@@ -50,8 +51,14 @@ program
     "Number of parallel domain checks",
     "10",
   )
+  .option("--mcp", "Run as MCP (Model Context Protocol) server")
   .action(async (options) => {
     try {
+      // Check if MCP mode
+      if (options.mcp) {
+        await startMcpServer();
+        return;
+      }
       // Use our manually parsed word groups
       const permutations =
         wordGroups.length > 0
